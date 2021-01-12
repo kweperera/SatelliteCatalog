@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: satellite_details CI
+name: satellite_catalog CI
 
 # Controls when the action will run. 
 on:
