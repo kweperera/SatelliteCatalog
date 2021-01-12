@@ -29,7 +29,6 @@ public class CatalogImplementation implements CatalogInterface {
         existingCatalog.setPurpose(catalog.getPurpose());
         existingCatalog.setPrimeContractor(catalog.getPrimeContractor());
         existingCatalog.setLaunchDate(catalog.getLaunchDate());
-        existingCatalog.setStatus(catalog.getStatus());
         return catalogRepo.save(existingCatalog);
 
     }

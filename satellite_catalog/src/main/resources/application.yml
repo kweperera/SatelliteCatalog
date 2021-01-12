@@ -1,11 +1,11 @@
 server:
-  port: 8089
+  port:8083
 
 spring:
   datasource:
-    username: satcatalogdb
-    password: satcatalogdb
-    url: jdbc:mysql://satcatalogdb.cfl1nlrulmmx.us-east-1.rds.amazonaws.com:3306/satcatalogdb
+    username: root
+    password: CatalogDB
+    url: jdbc:mysql://catalogdb.cfl1nlrulmmx.us-east-1.rds.amazonaws.com:3306/CatalogDB
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:

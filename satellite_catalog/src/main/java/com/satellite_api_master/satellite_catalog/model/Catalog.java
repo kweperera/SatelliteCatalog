@@ -2,7 +2,7 @@ package com.satellite_api_master.satellite_catalog.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "satellite_catalog",catalog = "satcatalogdb")
+@Table(name = "satellite_catalog",catalog = "CatalogDB")
 public class Catalog {
 
     @Id
@@ -15,14 +15,12 @@ public class Catalog {
     private String purpose;
     private String primeContractor;
     private String launchDate;
-    private String status;
     public Catalog(){
         super();
     }
 
     public Catalog(long satelliteId, String satelliteName, String operator, String country,
-                   String sector, String purpose, String primeContractor,
-                   String launchDate, String status) {
+                   String sector, String purpose, String primeContractor, String launchDate) {
         this.satelliteId = satelliteId;
         this.satelliteName = satelliteName;
         this.operator = operator;
@@ -31,7 +29,6 @@ public class Catalog {
         this.purpose = purpose;
         this.primeContractor = primeContractor;
         this.launchDate = launchDate;
-        this.status = status;
     }
 
     public long getSatelliteId() {
@@ -97,12 +94,6 @@ public class Catalog {
     public void setLaunchDate(String launchDate) {
         this.launchDate = launchDate;
     }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) { this.status = status; }
 
 
 
